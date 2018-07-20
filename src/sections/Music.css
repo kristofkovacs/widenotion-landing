@@ -1,0 +1,28 @@
+.music {
+  margin-top: 100px;
+}
+
+.music-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.music-item {
+  margin: 0px 30px;
+}
+
+.music-item img {
+  height: 175px;
+}
+
+.music-metonymy {
+  display: flex;
+  justify-content: center;
+}
+
+.music-metonymy h3 {
+  font-size: 28px;
+  margin-right: 20px;
+}
