@@ -1,5 +1,5 @@
 .music {
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 .music-list {
@@ -11,6 +11,13 @@
 
 .music-item {
   margin: 0px 30px;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+.music-item:hover {
+  color: #c1c1c1;
+  opacity: 0.8;
 }
 
 .music-item img {
@@ -18,11 +25,26 @@
 }
 
 .music-metonymy {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
+}
+
+.music-metonymy img {
+  transition: all 0.2s ease-in-out;
+}
+
+.music-metonymy img:hover {
+  color: #c1c1c1;
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .music-metonymy h3 {
   font-size: 28px;
   margin-right: 20px;
+}
+
+.music-tem p {
+  font-family: "Neou-Bold";
 }

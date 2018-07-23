@@ -37,8 +37,11 @@
 
 .contact-social-item {
   margin: 30px 50px;
+  transition: all 0.2s ease-in-out;
 }
 
-.contact-social-item a:hover {
-  background-color: #c1c1c1;
+.contact-social-item:hover {
+  color: #c1c1c1;
+  opacity: 0.8;
+  transform: scale(1.1);
 }

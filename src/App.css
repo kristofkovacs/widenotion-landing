@@ -16,6 +16,14 @@ body {
   margin: 0;
 }
 
+*:visited {
+  text-decoration: none;
+}
+
+*:link {
+  text-decoration: none;
+}
+
 h2 {
   font-family: "Neou-Bold";
   font-size: 48px;

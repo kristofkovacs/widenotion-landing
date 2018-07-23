@@ -1,5 +1,6 @@
 .about {
-  top: 200px;
+  top: 150px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,10 +19,12 @@
   margin-bottom: 20px;
   font-size: 20px;
   font-family: "Neou-Bold";
+  color: #c1c1c1;
 }
 
 .about-content p span {
   font-size: 28px;
+  color: #fff;
 }
 
 .about-content p {
