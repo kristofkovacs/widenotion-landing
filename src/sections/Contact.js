@@ -7,23 +7,23 @@ import twitter from "../img/twitter.svg";
 const Contact = () => (
   <div className="contact">
     <h2>Contact</h2>
-    <ul className="contact-email">
+    <ul className="contact-email-section">
       <li>
         <p className="contact-email-title">PRESS</p>
         <a href="mailto:press@widenotionmusic.net" target="_top">
-          <p>PRESS@WIDENOTIONMUSIC.NET</p>
+          <p className="contact-email">PRESS@WIDENOTIONMUSIC.NET</p>
         </a>
       </li>
       <li>
         <p className="contact-email-title">CONTACT</p>
         <a href="mailto:contact@widenotionmusic.net" target="_top">
-          <p>CONTACT@WIDENOTIONMUSIC.NET</p>
+          <p className="contact-email">CONTACT@WIDENOTIONMUSIC.NET</p>
         </a>
       </li>
       <li>
         <p className="contact-email-title">BOOKING</p>
         <a href="mailto:booking@widenotionmusic.net" target="_top">
-          <p>BOOKING@WIDENOTIONMUSIC.NET</p>
+          <p className="contact-email">BOOKING@WIDENOTIONMUSIC.NET</p>
         </a>
       </li>
     </ul>

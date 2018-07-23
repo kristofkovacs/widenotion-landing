@@ -6,7 +6,7 @@
   display: flex;
 }
 
-.contact-email {
+.contact-email-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,18 +15,26 @@
   font-family: "Neou-Bold";
 }
 
-.contact-email li {
+.contact-email-section li {
   display: flex;
   flex-direction: row;
   margin-bottom: 60px;
 }
 
-.contact-email li p {
+.contact-email-section li p {
   margin: 0px 30px;
   font-size: 28px;
 }
 
 .contact-email-title {
+  color: #c1c1c1;
+}
+
+.contact-email {
+  color: #fff;
+}
+
+.contact-email:hover {
   color: #c1c1c1;
 }
 
