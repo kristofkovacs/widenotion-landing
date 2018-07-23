@@ -10,7 +10,7 @@ import Nav from "./components/Nav.js";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="home">
         <Nav />
         <About />
         <Music />

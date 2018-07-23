@@ -18,6 +18,7 @@ class Gallery extends React.Component {
       autoplay: true,
       autoplaySpeed: 2000,
       slidesToScroll: 1,
+      loop: true,
       arrows: false
     };
     return (
