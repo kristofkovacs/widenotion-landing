@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "../img/wn.svg";
 import { animateScroll, Link as LinkBase } from "react-scroll";
-import { Box, Fixed, Flex, Image } from "rebass";
+import { Box, Fixed, Flex, Image, Toolbar } from "rebass";
 import styled from "styled-components";
 import { MenuText } from "../styles";
 
@@ -22,15 +22,20 @@ class Nav extends Component {
 
   render() {
     return (
-      <Fixed
-        className="home"
-        zIndex={1}
-        top={0}
-        bg="darkgray"
-        right={0}
-        left={0}
-      >
-        <Flex flexDirection="column" alignItems="center">
+      <Fixed zIndex={10} top={0} left={0} right={0} p={0} m={0}>
+        <Toolbar
+          bg="darkgray"
+          flexDirection="column"
+          alignItems={["flex-start", "flex-start", "center"]}
+          px={[0, 0, 0, 0, 0]}
+          m={0}
+          css={{
+            overflowX: "scroll",
+            "&::-webkit-scrollbar": {
+              display: "none"
+            }
+          }}
+        >
           <Flex
             flexDirection={["column", "column", "row"]}
             justifyContent="center"
@@ -96,9 +101,10 @@ class Nav extends Component {
             bg="#fff"
             css={{ height: "1px" }}
             m={0}
-            width={["100%", "100%", "100%", "80%", "75%"]}
+            p={0}
+            width={["100%", "100%", "100%", "85%", "75%"]}
           />
-        </Flex>
+        </Toolbar>
       </Fixed>
     );
   }
