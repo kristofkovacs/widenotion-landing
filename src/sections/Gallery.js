@@ -1,63 +1,59 @@
 import React from "react";
-import "./Gallery.css";
-import GalleryImageHolder from "../components/GalleryImageHolder.js";
 import Slider from "react-slick";
+
+import { Header1 } from "../styles";
+import { Flex, Hide, Image } from "rebass";
 
 import gallery1 from "../img/gallery1.jpg";
 import gallery2 from "../img/gallery2.jpg";
 import gallery3 from "../img/gallery3.jpg";
-import gallery4 from "../img/gallery4.png";
+
+const gallery = [gallery1, gallery2, gallery3, gallery1];
 
 class Gallery extends React.Component {
   render() {
     var settings = {
       dots: false,
       infinite: true,
-      speed: 500,
-      slidesToShow: 4,
+      speed: 2000,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 500,
       slidesToScroll: 1,
       loop: true,
-      arrows: false
+      arrows: false,
+      variableWidth: false
     };
     return (
-      <div className="gallery">
-        <h2>Gallery</h2>
-        <Slider className="gallery" {...settings}>
-          <div>
-            <img src={gallery1} />
-          </div>
-          <div>
-            <img src={gallery2} />
-          </div>
-          <div>
-            <img src={gallery3} />
-          </div>
-          <div>
-            <img src={gallery1} />
-          </div>
-          <div>
-            <img src={gallery2} />
-          </div>{" "}
-          <div>
-            <img src={gallery3} />
-          </div>{" "}
-          <div>
-            <img src={gallery1} />
-          </div>{" "}
-          <div>
-            <img src={gallery2} />
-          </div>{" "}
-          <div>
-            <img src={gallery3} />
-          </div>{" "}
-          <div>
-            <img src={gallery1} />
-          </div>
-          <div />
-        </Slider>
-      </div>
+      <Flex className="gallery" flexDirection="column" mt={100}>
+        <Header1 mb={[30, 50, 80, 100]}>Gallery</Header1>
+        <Hide small medium large xlarge>
+          <Slider className="gallery" {...settings} slidesToShow={1}>
+            {gallery.map(image => (
+              <Flex>
+                <Image src={image} css={{ height: "300px" }} />
+              </Flex>
+            ))}
+          </Slider>
+        </Hide>
+        <Hide xsmall large xlarge>
+          <Slider className="gallery" {...settings} slidesToShow={2}>
+            {gallery.map(image => (
+              <Flex>
+                <Image src={image} css={{ height: "400px" }} />
+              </Flex>
+            ))}
+          </Slider>
+        </Hide>
+        <Hide xsmall small medium>
+          <Slider className="gallery" {...settings} slidesToShow={3}>
+            {gallery.map(image => (
+              <Flex>
+                <Image src={image} css={{ height: "400px" }} />
+              </Flex>
+            ))}
+          </Slider>
+        </Hide>
+      </Flex>
     );
   }
 }
