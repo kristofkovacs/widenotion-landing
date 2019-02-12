@@ -1,5 +1,5 @@
 export const theme = {
-  fontSizes: [16, 20, 26, 50, 72, 80],
+  fontSizes: [18, 24, 28, 48],
   colors: {
     darkgray: "#202020",
     lightgray: "#c1c1c1",

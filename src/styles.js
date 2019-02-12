@@ -1,4 +1,4 @@
-import { Heading, Subhead, Text } from "rebass";
+import { Heading, Text } from "rebass";
 import styled from "styled-components";
 
 export const MenuText = styled(Text)`
@@ -11,9 +11,10 @@ export const MenuText = styled(Text)`
 
 export const Paragraph = styled(Text)`
   font-weight: bold;
-  line-height: 1.05;
-  font-size: 20px;
+  line-height: 1.4em;
+  font-size: 18px;
   letter-spacing: "3%";
+  color: #c1c1c1;
 `;
 
 export const Header1 = styled(Heading)`

@@ -2,9 +2,10 @@ import React from "react";
 import "./Nav.css";
 import logo from "../img/wn.svg";
 import { Link } from "react-scroll";
+import { Fixed } from "rebass";
 
 const Nav = () => (
-  <div className="nav">
+  <Fixed className="nav" zIndex={1} top={0} bg="darkgray" width="100%">
     <div className="nav-content">
       <Link
         activeClass="active"
@@ -31,7 +32,7 @@ const Nav = () => (
       </ul>
     </div>
     <hr />
-  </div>
+  </Fixed>
 );
 
 export default Nav;
