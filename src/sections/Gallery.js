@@ -15,9 +15,8 @@ class Gallery extends React.Component {
     var settings = {
       dots: false,
       infinite: true,
-      speed: 2000,
       autoplay: true,
-      autoplaySpeed: 500,
+      speed: 500,
       slidesToScroll: 1,
       loop: true,
       arrows: false,
@@ -25,7 +24,9 @@ class Gallery extends React.Component {
     };
     return (
       <Flex className="gallery" flexDirection="column" mt={100}>
-        <Header1 mb={[30, 50, 80, 100]}>Gallery</Header1>
+        <Header1 mb={[30, 50, 80, 100]} fontSize={[28, 28, 38, 46, 48]}>
+          Gallery
+        </Header1>
         <Hide small medium large xlarge>
           <Slider className="gallery" {...settings} slidesToShow={1}>
             {gallery.map(image => (

@@ -10,7 +10,9 @@ import { Flex, Image, NavLink } from "rebass";
 
 const Music = () => (
   <Flex mt={150} className="music" flexDirection="column">
-    <Header1 mb={80}>My Music</Header1>
+    <Header1 mb={80} fontSize={[28, 28, 38, 46, 48]}>
+      My Music
+    </Header1>
 
     <Flex flexWrap="wrap" justifyContent="center">
       <MusicItem
@@ -44,7 +46,9 @@ const Music = () => (
       />
     </Flex>
     <Flex mt={100} alignItems="center" justifyContent="center">
-      <Header2 mr={25}>RELEASED BY</Header2>
+      <Header2 mr={25} fontSize={[18, 18, 22, 28, 28]}>
+        RELEASED BY
+      </Header2>
       <NavLink
         href="https://www.facebook.com/metonymyrecordings/"
         target="_blank"
@@ -82,8 +86,8 @@ const MusicItem = ({ link, image, label, ...rest }) => (
     }}
   >
     <Flex flexDirection="column" alignItems="center">
-      <Image width={175} src={image} mb={30} />
-      <Header2>{label}</Header2>
+      <Image width={[95, 100, 120, 175]} src={image} mb={[15, 15, 30]} />
+      <Header2 fontSize={[18, 18, 22, 28, 28]}>{label}</Header2>
     </Flex>
   </NavLink>
 );

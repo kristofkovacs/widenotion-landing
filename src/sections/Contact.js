@@ -14,7 +14,9 @@ const Contact = () => (
     mt={150}
     mb={200}
   >
-    <Header1 mb={100}>Contact</Header1>
+    <Header1 mb={100} fontSize={[28, 28, 38, 46, 48]}>
+      Contact
+    </Header1>
     <Flex flexDirection="column">
       <ContactEmailItem
         type={"PRESS"}
@@ -32,7 +34,7 @@ const Contact = () => (
         mb={45}
       />
     </Flex>
-    <Flex mt={80} flexWrap="wrap">
+    <Flex mt={80} flexWrap="wrap" justifyContent="center">
       <ContactSocialItem
         link={"https://facebook.com/widenotionofficial"}
         image={facebook}
@@ -52,14 +54,19 @@ const Contact = () => (
 const ContactEmailItem = ({ email, type, ...rest }) => (
   <Flex
     {...rest}
-    flexDirection="row"
+    flexDirection={["column", "column", "row"]}
     justifyContent="space-between"
     alignItems="center"
     flexWrap="wrap"
   >
-    <Header2 color="lightgray">{type}</Header2>
+    <Header2 color="lightgray" fontSize={[18, 18, 22, 28, 28]}>
+      {type}
+    </Header2>
     <NavLink href={"mailto:" + email} target="_top">
-      <Paragraph fontSize={24} css={{ "&:hover": { color: "lightgray" } }}>
+      <Paragraph
+        fontSize={[18, 18, 20, 24, 24]}
+        css={{ "&:hover": { color: "lightgray" } }}
+      >
         {email.toUpperCase()}
       </Paragraph>
     </NavLink>

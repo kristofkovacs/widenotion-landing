@@ -3,6 +3,7 @@ import logo from "../img/wn.svg";
 import { animateScroll, Link as LinkBase } from "react-scroll";
 import { Box, Fixed, Flex, Image } from "rebass";
 import styled from "styled-components";
+import { MenuText } from "../styles";
 
 export const Link = styled(LinkBase)`
   margin: 0px 30px;
@@ -60,7 +61,7 @@ class Nav extends Component {
               </Link>
             </Flex>
             <Flex
-              justifyContent="center"
+              justifyContent="space-around"
               alignItems="center"
               flexDirection="row"
               py={[3, 3, 20, 25, 30]}
@@ -72,7 +73,7 @@ class Nav extends Component {
                 duration={1000}
                 offset={-120}
               >
-                About
+                <MenuText fontSize={[18, 18, 20, 22, 24]}>About</MenuText>
               </Link>
               <Link
                 to="music"
@@ -81,13 +82,13 @@ class Nav extends Component {
                 duration={1000}
                 offset={-120}
               >
-                Music
+                <MenuText fontSize={[18, 18, 20, 22, 24]}>Music</MenuText>
               </Link>
               <Link to="gallery" smooth={true} duration={1000} offset={-120}>
-                Gallery
+                <MenuText fontSize={[18, 18, 20, 22, 24]}>Gallery</MenuText>
               </Link>
               <Link to="contact" smooth={true} duration={1000} offset={-120}>
-                Contact
+                <MenuText fontSize={[18, 18, 20, 22, 24]}>Contact</MenuText>
               </Link>
             </Flex>
           </Flex>
