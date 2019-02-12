@@ -1,15 +1,7 @@
 import React from "react";
 import "./Nav.css";
 import logo from "../img/wn.svg";
-import * as Scroll from "react-scroll";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
+import { Link } from "react-scroll";
 
 const Nav = () => (
   <div className="nav">
