@@ -4,7 +4,7 @@ import Music from "./sections/Music.js";
 import Gallery from "./sections/Gallery.js";
 import Contact from "./sections/Contact.js";
 import Nav from "./components/Nav.js";
-import { Provider } from "rebass";
+import { Provider, Flex } from "rebass";
 import { GlobalStyle } from "./GlobalStyle";
 import { theme } from "./theme";
 

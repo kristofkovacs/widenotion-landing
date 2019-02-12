@@ -1,14 +1,33 @@
 import React from "react";
 import about from "../img/about.png";
+import mobileAbout from "../img/mobileAbout.png";
+
 import { Paragraph, Header1, Header2 } from "../styles";
-import { Flex, Image } from "rebass";
+import { Flex, Hide, Image } from "rebass";
 
 const About = () => (
   <Flex className="about" mt={150} justifyContent="center">
-    <Flex alignItems="start" flexDirection="column" width={"65%"}>
+    <Flex
+      alignItems="start"
+      flexDirection="column"
+      width={["92%", "90%", "85%", "80%", "70%"]}
+    >
       <Header1 mb={40}>About</Header1>
-      <Flex>
-        <Flex flexDirection="column" css={{ textAlign: "left" }} mr={40}>
+      <Flex
+        flexDirection={[
+          "column-reverse",
+          "column-reverse",
+          "column-reverse",
+          "row",
+          "row"
+        ]}
+      >
+        <Flex
+          flexDirection="column"
+          css={{ textAlign: "left" }}
+          mr={40}
+          width={["100%", "100%", "100%", "60%", "50%"]}
+        >
           <Paragraph mb={20}>
             This story is about a kid who had a dream and who wanted to be
             acknowledged in the dance music industry. Initially, he was refused
@@ -27,7 +46,7 @@ const About = () => (
             The Wide Notion and METONYMY Recordings are communicating their
             vision not just in a musical but also in a physical form. And behind
             the scenes there are years of continuous working, sacrificing and
-            learning.{" "}
+            learning.
           </Paragraph>
           <Paragraph mb={20}>
             Some people believe in miracles: that they are going to be
@@ -35,11 +54,16 @@ const About = () => (
             everything by ourselves. Don't forget, the key of success is in the
             action itself. It's in the work and sacrifice put into something.
             It's in the days when you're surrounded by doubt and negativity and
-            you still carry on and follow your dreams.{" "}
+            you still carry on and follow your dreams.
           </Paragraph>
           <Header2 mb={20}>This is what Wide Notion is about.</Header2>
         </Flex>
-        <Image width="100%" css={{ height: "100%" }} src={about} />
+        <Hide xsmall small medium>
+          <Image width="100%" mb={0} src={about} />
+        </Hide>
+        <Hide large xlarge>
+          <Image width="100%" mb={20} src={mobileAbout} />
+        </Hide>
       </Flex>
     </Flex>
   </Flex>
