@@ -14,7 +14,6 @@ export const Paragraph = styled(Text)`
   line-height: 1.4em;
   font-size: 18px;
   letter-spacing: "3%";
-  color: #c1c1c1;
 `;
 
 export const Header1 = styled(Heading)`

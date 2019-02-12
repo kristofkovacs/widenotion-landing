@@ -15,7 +15,7 @@ const Contact = () => (
     mb={200}
   >
     <Header1 mb={100}>Contact</Header1>
-    <Flex flexDirection="column" width={"40%"}>
+    <Flex flexDirection="column">
       <ContactEmailItem
         type={"PRESS"}
         email={"press@widenotionmusic.net"}
@@ -24,6 +24,7 @@ const Contact = () => (
       <ContactEmailItem
         type={"CONTACT"}
         email={"contact@widenotionmusic.net"}
+        mb={45}
       />
       <ContactEmailItem
         type={"BOOKING"}
@@ -31,7 +32,7 @@ const Contact = () => (
         mb={45}
       />
     </Flex>
-    <Flex mt={80}>
+    <Flex mt={80} flexWrap="wrap">
       <ContactSocialItem
         link={"https://facebook.com/widenotionofficial"}
         image={facebook}
@@ -54,10 +55,11 @@ const ContactEmailItem = ({ email, type, ...rest }) => (
     flexDirection="row"
     justifyContent="space-between"
     alignItems="center"
+    flexWrap="wrap"
   >
-    <Header2>{type}</Header2>
+    <Header2 color="lightgray">{type}</Header2>
     <NavLink href={"mailto:" + email} target="_top">
-      <Paragraph fontSize={24} css={{ "&:hover": { color: "#c1c1c1" } }}>
+      <Paragraph fontSize={24} css={{ "&:hover": { color: "lightgray" } }}>
         {email.toUpperCase()}
       </Paragraph>
     </NavLink>
@@ -68,10 +70,11 @@ const ContactSocialItem = ({ link, image, ...rest }) => (
   <NavLink
     href={link}
     target="_blank"
+    my={[10, 10, 20, 30]}
+    mx={[15, 20, 30, 40, 50]}
     css={{
-      margin: "30px 50px",
       transition: "all 0.2s ease-in-out",
-      "&:hover": { color: "#c1c1c1", opacity: "0.8", transform: "scale(1.1)" }
+      "&:hover": { color: "lightgray", opacity: "0.8", transform: "scale(1.1)" }
     }}
   >
     <Image src={image} />

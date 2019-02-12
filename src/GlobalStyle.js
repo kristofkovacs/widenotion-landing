@@ -18,7 +18,7 @@ body {
   background-color: ${color.darkgray};
   font-family: "Neou-Bold";
   text-align: center;
-  color: #fff;
+  color: white;
   margin: 0;
 }
 
