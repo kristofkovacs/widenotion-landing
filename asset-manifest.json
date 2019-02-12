@@ -1,7 +1,20 @@
 {
-  "main.css": "static/css/main.c17080f1.css",
-  "main.css.map": "static/css/main.c17080f1.css.map",
-  "main.js": "static/js/main.7e29b56a.js",
-  "main.js.map": "static/js/main.7e29b56a.js.map",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "main.css": "static/css/main.d41d8cd9.css",
+  "main.css.map": "static/css/main.d41d8cd9.css.map",
+  "main.js": "static/js/main.1a9541c3.js",
+  "main.js.map": "static/js/main.1a9541c3.js.map",
+  "static/media/about.png": "static/media/about.80089875.png",
+  "static/media/beatport.svg": "static/media/beatport.a55aa613.svg",
+  "static/media/deezer.svg": "static/media/deezer.1abfd1f8.svg",
+  "static/media/facebook.svg": "static/media/facebook.6f425ca8.svg",
+  "static/media/gallery1.jpg": "static/media/gallery1.271e0cf6.jpg",
+  "static/media/gallery2.jpg": "static/media/gallery2.f4677731.jpg",
+  "static/media/gallery3.jpg": "static/media/gallery3.46f71f7e.jpg",
+  "static/media/instagram.svg": "static/media/instagram.a9925b8f.svg",
+  "static/media/itunes.svg": "static/media/itunes.04c5cafc.svg",
+  "static/media/metonymy.svg": "static/media/metonymy.b0807b2a.svg",
+  "static/media/mobileAbout.png": "static/media/mobileAbout.796cf9bc.png",
+  "static/media/spotify.svg": "static/media/spotify.851ac37a.svg",
+  "static/media/twitter.svg": "static/media/twitter.888c4114.svg",
+  "static/media/wn.svg": "static/media/wn.5edbf4d7.svg"
 }
