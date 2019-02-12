@@ -11,10 +11,10 @@ const Contact = () => (
     className="contact"
     flexDirection="column"
     alignItems="center"
-    mt={150}
-    mb={200}
+    mt={[80, 80, 100, 120, 150]}
+    mb={[50, 50, 120, 150, 200]}
   >
-    <Header1 mb={100} fontSize={[28, 28, 38, 46, 48]}>
+    <Header1 mb={[40, 40, 60, 80, 100]} fontSize={[28, 28, 38, 46, 48]}>
       Contact
     </Header1>
     <Flex flexDirection="column">
@@ -31,10 +31,9 @@ const Contact = () => (
       <ContactEmailItem
         type={"BOOKING"}
         email={"booking@widenotionmusic.net"}
-        mb={45}
       />
     </Flex>
-    <Flex mt={80} flexWrap="wrap" justifyContent="center">
+    <Flex mt={[20, 20, 50, 70, 80]} flexWrap="wrap" justifyContent="center">
       <ContactSocialItem
         link={"https://facebook.com/widenotionofficial"}
         image={facebook}
@@ -84,7 +83,7 @@ const ContactSocialItem = ({ link, image, ...rest }) => (
       "&:hover": { color: "lightgray", opacity: "0.8", transform: "scale(1.1)" }
     }}
   >
-    <Image src={image} />
+    <Image src={image} width={[65, 68, 75, 85, 92]} />
   </NavLink>
 );
 

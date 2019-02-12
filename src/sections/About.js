@@ -19,7 +19,7 @@ const About = () => (
         flexDirection={[
           "column-reverse",
           "column-reverse",
-          "column-reverse",
+          "row",
           "row",
           "row"
         ]}
@@ -28,7 +28,7 @@ const About = () => (
           flexDirection="column"
           css={{ textAlign: "left" }}
           mr={40}
-          width={["100%", "100%", "100%", "60%", "50%"]}
+          width={["100%", "100%", "65%", "60%", "50%"]}
         >
           <Paragraph
             mb={20}
@@ -78,10 +78,10 @@ const About = () => (
             This is what Wide Notion is about.
           </Header2>
         </Flex>
-        <Hide xsmall small medium>
+        <Hide xsmall small>
           <Image width="100%" mb={0} src={about} />
         </Hide>
-        <Hide large xlarge>
+        <Hide medium large xlarge>
           <Image width="100%" mb={20} src={mobileAbout} />
         </Hide>
       </Flex>

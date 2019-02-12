@@ -9,14 +9,15 @@ import { Header1, Header2 } from "../styles";
 import { Flex, Image, NavLink } from "rebass";
 
 const Music = () => (
-  <Flex mt={150} className="music" flexDirection="column">
-    <Header1 mb={80} fontSize={[28, 28, 38, 46, 48]}>
+  <Flex mt={[80, 80, 100, 130, 150]} className="music" flexDirection="column">
+    <Header1 mb={[60, 60, 65, 75, 80]} fontSize={[28, 28, 38, 46, 48]}>
       My Music
     </Header1>
 
     <Flex flexWrap="wrap" justifyContent="center">
       <MusicItem
-        mx={50}
+        mx={[30, 30, 30, 40, 50]}
+        my={[15, 15, 25, 0, 0]}
         link={
           "https://open.spotify.com/artist/0FXGuFCHJLQ7f4avSm3L6W?si=K-zqGL8TQomQsSvSXb6pDQ"
         }
@@ -25,7 +26,8 @@ const Music = () => (
       />
 
       <MusicItem
-        mx={50}
+        mx={[30, 30, 30, 40, 50]}
+        my={[15, 15, 25, 0, 0]}
         link={
           "https://open.spotify.com/artist/0FXGuFCHJLQ7f4avSm3L6W?si=K-zqGL8TQomQsSvSXb6pDQ"
         }
@@ -33,19 +35,25 @@ const Music = () => (
         label={"Spotify"}
       />
       <MusicItem
-        mx={50}
+        mx={[30, 30, 30, 40, 50]}
+        my={[15, 15, 25, 0, 0]}
         link={"https://itunes.apple.com/ro/artist/wide-notion/1266727952"}
         image={itunes}
         label={"iTunes"}
       />
       <MusicItem
-        mx={50}
+        mx={[30, 30, 30, 40, 50]}
+        my={[15, 15, 25, 0, 0]}
         link={"https://www.deezer.com/en/artist/12982849"}
         image={deezer}
         label={"Deezer"}
       />
     </Flex>
-    <Flex mt={100} alignItems="center" justifyContent="center">
+    <Flex
+      mt={[40, 40, 50, 80, 100]}
+      alignItems="center"
+      justifyContent="center"
+    >
       <Header2 mr={25} fontSize={[18, 18, 22, 28, 28]}>
         RELEASED BY
       </Header2>
@@ -55,6 +63,7 @@ const Music = () => (
       >
         <Image
           src={metonymy}
+          width={[43, 45, 52, 60, 67]}
           css={{
             transition: "all 0.15s ease-in-out",
             "&:hover": {
