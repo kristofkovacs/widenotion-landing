@@ -10,7 +10,7 @@ import { Flex, Image, NavLink } from "rebass";
 
 const Music = () => (
   <Flex mt={[80, 80, 100, 130, 150]} className="music" flexDirection="column">
-    <Header1 mb={[60, 60, 65, 75, 80]} fontSize={[28, 28, 38, 46, 48]}>
+    <Header1 mb={[50,70]} fontSize={[28, 28, 38, 46, 48]}>
       My Music
     </Header1>
 
@@ -50,20 +50,21 @@ const Music = () => (
       />
     </Flex>
     <Flex
-      mt={[40, 40, 50, 80, 100]}
+      mt={[40, 40, 50]}
       alignItems="center"
       justifyContent="center"
     >
-      <Header2 mr={25} fontSize={[18, 18, 22, 28, 28]}>
+      <Header2 mr={25} color='#aaa' fontSize={[18, 18, 22]}>
         RELEASED BY
       </Header2>
       <NavLink
+      pt='0px'
         href="https://www.facebook.com/metonymyrecordings/"
         target="_blank"
       >
         <Image
           src={metonymy}
-          width={[43, 45, 52, 60, 67]}
+          width={[43, 50]}
           css={{
             transition: "all 0.15s ease-in-out",
             "&:hover": {
@@ -95,7 +96,7 @@ const MusicItem = ({ link, image, label, ...rest }) => (
     }}
   >
     <Flex flexDirection="column" alignItems="center">
-      <Image width={[95, 100, 120, 175]} src={image} mb={[15, 15, 30]} />
+      <Image width={[80, 100, 120, 140]} src={image} mb={[15, 15, 30]} />
       <Header2 fontSize={[18, 18, 22, 28, 28]}>{label}</Header2>
     </Flex>
   </NavLink>

@@ -24,7 +24,7 @@ class Gallery extends React.Component {
     };
     return (
       <Flex className="gallery" flexDirection="column" mt={100}>
-        <Header1 mb={[30, 50, 80, 100]} fontSize={[28, 28, 38, 46, 48]}>
+        <Header1 mb={[30, 50]} fontSize={[28, 28, 38, 46, 48]}>
           Gallery
         </Header1>
         <Hide small medium large xlarge>
