@@ -6,7 +6,6 @@ import styled from "styled-components";
 import { MenuText } from "../styles";
 
 export const Link = styled(LinkBase)`
-  margin: 0px 30px;
   font-family: "Neou-Bold";
   color: #fff;
   &:hover {
@@ -26,7 +25,7 @@ class Nav extends Component {
         <Toolbar
           bg="darkgray"
           flexDirection="column"
-          alignItems={["flex-start", "flex-start", "center"]}
+          alignItems={ "center"}
           px={[0, 0, 0, 0, 0]}
           m={0}
           css={{
@@ -43,6 +42,7 @@ class Nav extends Component {
           >
             <Flex>
               <Link
+                mx={["5px","10px","30px"]}
                 activeClass="active"
                 onClick={this.scrollToTop}
                 to="nav"
@@ -51,6 +51,7 @@ class Nav extends Component {
                 duration={500}
               >
                 <Image
+                mx={["5px","20px","40px"]}
                   width={[55, 60, 65, 70, 75]}
                   css={{
                     transition: "all 0.2s ease-in-out",
@@ -78,7 +79,7 @@ class Nav extends Component {
                 duration={1000}
                 offset={-120}
               >
-                <MenuText fontSize={[18, 18, 20, 22, 24]}>About</MenuText>
+                <MenuText mx={["5px","10px","20px"]} fontSize={[16, 18, 20, 22]}>About</MenuText>
               </Link>
               <Link
                 to="music"
@@ -87,13 +88,13 @@ class Nav extends Component {
                 duration={1000}
                 offset={-120}
               >
-                <MenuText fontSize={[18, 18, 20, 22, 24]}>Music</MenuText>
+                <MenuText mx={["5px","10px","20px"]} fontSize={[16, 18, 20, 22]}>Music</MenuText>
               </Link>
               <Link to="gallery" smooth={true} duration={1000} offset={-120}>
-                <MenuText fontSize={[18, 18, 20, 22, 24]}>Gallery</MenuText>
+                <MenuText mx={["5px","10px","20px"]} fontSize={[16, 18, 20, 22]}>Gallery</MenuText>
               </Link>
               <Link to="contact" smooth={true} duration={1000} offset={-120}>
-                <MenuText fontSize={[18, 18, 20, 22, 24]}>Contact</MenuText>
+                <MenuText mx={["5px","10px","20px"]} fontSize={[16, 18, 20, 22]}>Contact</MenuText>
               </Link>
             </Flex>
           </Flex>
