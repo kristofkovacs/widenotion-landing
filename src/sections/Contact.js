@@ -12,9 +12,9 @@ const Contact = () => (
     flexDirection="column"
     alignItems="center"
     mt={[80, 80, 100, 120, 150]}
-    mb={[50, 50, 120, 150, 200]}
+    mb={[50]}
   >
-    <Header1 mb={[40, 40, 60, 80, 100]} fontSize={[28, 28, 38, 46, 48]}>
+    <Header1 mb={[50,70]} fontSize={[28, 28, 38, 46, 48]}>
       Contact
     </Header1>
     <Flex flexDirection="column">
@@ -54,21 +54,27 @@ const ContactEmailItem = ({ email, type, ...rest }) => (
   <Flex
     {...rest}
     flexDirection={["column", "column", "row"]}
-    justifyContent="space-between"
+    justifyContent="start"
     alignItems="center"
     flexWrap="wrap"
   >
-    <Header2 color="lightgray" fontSize={[18, 18, 22, 28, 28]}>
+  <Flex width='120px' mr={['0px','0px','50px']} justifyContent={['center','center','flex-end']}>
+    <Header2 color="lightgray" fontSize={[18, 18, 22]}>
       {type}
     </Header2>
+  </Flex>
+  <Flex justifyContent={['center','center',"start"]}>
+
     <NavLink href={"mailto:" + email} target="_top">
       <Paragraph
-        fontSize={[18, 18, 20, 24, 24]}
+        fontSize={[18, 18, 20]}
         css={{ "&:hover": { color: "lightgray" } }}
       >
         {email.toUpperCase()}
       </Paragraph>
     </NavLink>
+    </Flex>
+
   </Flex>
 );
 
@@ -83,7 +89,7 @@ const ContactSocialItem = ({ link, image, ...rest }) => (
       "&:hover": { color: "lightgray", opacity: "0.8", transform: "scale(1.1)" }
     }}
   >
-    <Image src={image} width={[65, 68, 75, 85, 92]} />
+    <Image src={image} width={[65, 68, 75]} />
   </NavLink>
 );
 
