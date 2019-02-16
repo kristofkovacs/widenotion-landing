@@ -8,7 +8,7 @@ import { Flex, Hide, Image } from "rebass";
 const About = () => (
   <Flex className="about" mt={150} justifyContent="center">
     <Flex
-      alignItems="start"
+      justifyContent="center"
       flexDirection="column"
       width={["92%", "90%", "85%", "80%", "70%"]}
     >
@@ -16,6 +16,8 @@ const About = () => (
         About
       </Header1>
       <Flex
+        alignItems="center"
+        justifyContent="center"
         flexDirection={[
           "column-reverse",
           "column-reverse",
